@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Passion+One&display=swap">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <nav class="navbar-header">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.svg" height="40px" width="40px"></a>
+      </div>
+      <ul class="navbar">
+        <li class="navbar-item"><a href="index.html">Home</a></li>
+        <li class="navbar-item"><a href="gallery.html">Gallery</a></li>
+        <li class="navbar-item"><a href="contact.html">Contact Us</a></li>
+        <button class="navbar-item-active" style="font-variant: small-caps"><a href="login.html">Login</a></button>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="#">
+        <fieldset>
+          <legend> Login </legend>
+          <div class="form-wrapper">
+            <div class="text-fields">
+              <p>
+                <label for="uname">Username:<abbr class="required" title="required">*</abbr></label>
+                <input type="text" placeholder="Enter Username" id="uname" name="userName" pattern="[A-Za-z]{2,20}"
+                  required>
+              </p>
+
+              <p>
+                <label for="pword">Password:<abbr class="required" title="required">*</abbr></label>
+                <input type="password" placeholder="Enter Password" id="pword" name="passWord" pattern="[A-Za-z]{2,20}"
+                  required>
+              </p>
+            </div>
+
+            <fieldset>
+              <ul>
+                <li><input type="checkbox" id="checkbo1" name="checkbox" value="checkbox">
+                  <label for="checkbox1">Forget Password?</label>
+                </li>
+                <li>
+                  <label for="checkbox1">Not yet registered?
+                    <button style="font-variant: small-caps"><a href="registration.html">Register</a></button>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <div class="button">
+              <button type="submit"> Login </button>
+            </div>
+      </form>
+    </main>
+
+    <footer>
+      &copy 2020 Vincent Miranda. All Rights Reserved
+    </footer>
+
+  </div>
+</body>
+</html>

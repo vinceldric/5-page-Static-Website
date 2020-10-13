@@ -1,0 +1,125 @@
+/* defaults */
+* {
+  box-sizing: border-box;
+	margin: 0;
+}
+
+/* navbar */
+.navbar-header {
+	display: flex;
+	max-height: 50px;
+	margin-bottom: 0;
+	
+	align-items: center; 
+	justify-content: space-between;
+	
+	background-color: white;
+	
+	font-variant: small-caps;
+}
+
+/* navbar style and logo */
+.logo {
+	width: 50px;
+	max-height: 50px;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar-item {
+	text-align: right;
+	list-style-type: none;
+}
+
+.navbar-item-active {
+	text-align: center;
+	list-style-type: none;
+	
+	text-decoration: underline;
+}
+
+.navbar-item li,
+.navbar-item a {
+	color: black;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.navbar-item a,
+.navbar-item-active a {
+	text-decoration: none;
+	color: black;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* navbar behavior */
+.navbar-item a:hover {
+  color: white;
+  color: hsl(240deg, 100%, 50%);
+}
+  
+.navbar-item a:active {
+  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-item-active a:hover {
+  color: white;
+  color: hsl(240deg, 100%, 50%);
+}
+  
+.navbar-item-active a:active {
+  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	background-image: url(../img/bg-other.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery figure {
+  margin: 0.5em;
+  text-align: center;
+}
+
+figcaption {
+  width: 30ch;
+	color: white;
+	text-shadow: 2px 2px green;
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+/* footer style*/
+footer {
+	background-color: silver;
+	
+	text-align: center;
+	padding: 0.5rem;
+}

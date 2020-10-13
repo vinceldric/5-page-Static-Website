@@ -1,0 +1,192 @@
+/* defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* navbar */
+.navbar-header {
+	display: flex;
+	max-height: 50px;
+	margin-bottom: 0;
+	
+	align-items: center;
+	justify-content: space-between;
+	
+	background-color: white;
+	
+	font-variant: small-caps;
+}
+
+/* navbar style and logo */
+.logo {
+	width: 50px;
+	max-height: 50px;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar-item {
+	text-align: right;
+	list-style-type: none;
+}
+
+.navbar-item li,
+.navbar-item a {
+	color: black;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.navbar-item a {
+	text-decoration: none;
+	color: black;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* navbar behavior */
+.navbar-item a:hover {
+  color: white;
+  color: hsl(240deg, 100%, 50%);
+}
+  
+.navbar-item a:active {
+  color: white;
+  color: rgb(0, 0, 0);
+}
+
+/* main div */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	
+	min-height: 100vh;
+}
+
+/* main content */
+main {
+  height: 100vh;
+  display: flex;
+
+	flex: 1;
+	background-image: url(../img/bg-other.jpg);
+	background-size: cover;
+  background-position: center;
+}
+
+main > * {
+  margin: auto;
+}
+
+/* media query */
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > h1 {
+    text-align: center;
+  }
+}
+
+
+/* form & content style */
+form {
+  font-size: 20px;
+  border: 2px solid black;
+  margin: auto;
+  max-width: 33ch;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  text-shadow: 3px 3px green;
+}
+
+p {
+  margin: auto;
+
+  font-family: 'Passion One', Helvetica, sans-serif;
+  font-size: 10px;
+  color: black;
+  width: max-content;
+  padding-bottom: 5px;
+}
+
+.required {
+  color: red;
+}
+
+legend {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+fieldset {
+  border: 0;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+fieldset ul {
+  margin-left: 2rem;
+  margin-top: 0;
+
+  list-style-type: none;
+  padding-left: 0;
+}
+
+fieldset ul input {
+  height: 1rem;
+  width: 1rem;
+}
+
+input {
+  border: 1px solid black;
+}
+
+.text-fields p {
+  display: flex;
+  
+}
+
+.text-fields label {
+  width: 10ch;
+  font-size: 20px;
+}
+
+.text-fields p input {
+  flex: 1;
+}
+
+.select {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30ch;
+}
+
+textarea {
+  display: flex;
+  border: 1px solid black;
+}
+
+/* button style */
+.button {
+  text-align: center;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+/* footer style */
+footer {
+	background-color: silver;
+	
+	text-align: center;
+	padding: 0.5rem;
+}
